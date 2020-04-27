@@ -125,6 +125,10 @@ public class Tabla extends Parent {
         }
 
         public boolean loves() {
+            if( Main.jatekVege == true)
+            {
+                return false;
+            }
             wasShot = true;
             setFill(Color.BLACK);
 
