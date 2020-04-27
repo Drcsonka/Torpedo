@@ -111,6 +111,8 @@ public class Main extends Application {
         //Hatter
 
 
+/*
+
         Image image = new Image("BG2.jpeg");
 
         BackgroundImage backgroundimage = new BackgroundImage(image,
@@ -122,6 +124,9 @@ public class Main extends Application {
         Background background = new Background(backgroundimage);
 
         root.setBackground(background);
+
+*/
+
 
 
 
@@ -226,8 +231,7 @@ int a = 1;
 
         // Tablak kozepen
 
-        Label label1 = new Label("1");
-
+        Label label1 = new Label("    1");
         Label label2 = new Label("2");
         Label label3 = new Label("3");
         Label label4 = new Label("4");
@@ -238,17 +242,66 @@ int a = 1;
         Label label9 = new Label("9");
         Label label10 = new Label("10");
 
-        HBox it = new HBox(27, label1, label2,label3, label4,label5,label6,label7,label8,label9,label10);
-        it.setAlignment(Pos.CENTER);
-        root.setCenter(it);
-        HBox it2 = new HBox(25, label1, label2,label3, label4,label5,label6,label7,label8,label9,label10);
-        it2.setAlignment(Pos.CENTER);
-        root.setCenter(it2);
+        Label labelS1 = new Label("A");
+        Label labelS2 = new Label("B");
+        Label labelS3 = new Label("C");
+        Label labelS4 = new Label("D");
+        Label labelS5 = new Label("E");
+        Label labelS6 = new Label("F");
+        Label labelS7 = new Label("G");
+        Label labelS8 = new Label("H");
+        Label labelS9 = new Label("I");
+        Label labelS10 = new Label("J");
 
-        VBox vbox = new VBox(3, it2, tablaE,  tablaJ);
-        vbox.setAlignment(Pos.CENTER);
+        Label label11 = new Label("    1");
+        Label label22 = new Label("2");
+        Label label33 = new Label("3");
+        Label label44 = new Label("4");
+        Label label55 = new Label("5");
+        Label label66 = new Label("6");
+        Label label77 = new Label("7");
+        Label label88 = new Label("8");
+        Label label99 = new Label("9");
+        Label label101 = new Label("10");
 
-        root.setCenter(vbox);
+        Label labelS11 = new Label("A");
+        Label labelS22 = new Label("B");
+        Label labelS33 = new Label("C");
+        Label labelS44 = new Label("D");
+        Label labelS55 = new Label("E");
+        Label labelS66 = new Label("F");
+        Label labelS77 = new Label("G");
+        Label labelS88 = new Label("H");
+        Label labelS99 = new Label("I");
+        Label labelS101 = new Label("J");
+
+
+
+        VBox Betu11 = new VBox(16, labelS1, labelS2,labelS3, labelS4,labelS5,labelS6,labelS7,labelS8,labelS9,labelS10);
+        Betu11.setAlignment(Pos.CENTER);
+        root.setCenter(Betu11);
+        HBox Szam11 = new HBox(25.5, label1, label2,label3, label4,label5,label6,label7,label8,label9,label10);
+
+        root.setCenter(Szam11);
+
+        VBox Betu1 = new VBox(16, labelS11, labelS22,labelS33, labelS44,labelS55,labelS66,labelS77,labelS88,labelS99,labelS101);
+        Betu1.setAlignment(Pos.CENTER);
+        root.setCenter(Betu1);
+        HBox Szam1 = new HBox(25.5, label11, label22,label33, label44,label55,label66,label77,label88,label99,label101);
+
+        root.setCenter(Szam1);
+
+        HBox masodikTablaTabla = new HBox(8, tablaJ, Betu1);
+        VBox masodikTabla = new VBox(6, Szam1,masodikTablaTabla);
+
+        HBox elsoTablaTabla = new HBox(8, tablaE, Betu11);
+        VBox elsoTabla = new VBox(6, Szam11,elsoTablaTabla);
+
+        VBox tablak = new VBox(50, elsoTabla, masodikTabla);
+        tablak.setAlignment(Pos.CENTER);
+
+
+        root.setCenter(tablak);
 
 
         return root;
