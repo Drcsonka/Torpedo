@@ -6,18 +6,24 @@ import java.util.Random;
 
 import javafx.application.Application;
 
+import javafx.event.EventDispatcher;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.print.*;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.scene.transform.Scale;
 import javafx.stage.Stage;
 
 import Torpedo.Tabla.Cella;
@@ -88,6 +94,20 @@ public class Main extends Application {
         menu.setAlignment(Pos.TOP_CENTER);
         root.setRight(menu);
 
+        Node printnode = new Label("321");
+
+
+        /*
+        Rectangle rect = new Rectangle(0,0,root.getWidth(),root.getHeight());
+        root.setClip(rect);
+        WritableImage writableImage;
+        writableImage = new WritableImage((int) root.getPrefWidth(),
+                (int) root.getPrefHeight());
+        root.snapshot(null, writableImage);
+
+        EventDispatcher eventDispatcher = root.getEventDispatcher();
+        eventDispatcher.printLandscape(writableImage);
+*/
 
 
 
@@ -98,11 +118,8 @@ public class Main extends Application {
 
 
 
+
         //Hatter
-
-
-
-
         Image image = new Image("BG2.jpeg");
 
         BackgroundImage backgroundimage = new BackgroundImage(image,
@@ -132,25 +149,7 @@ public class Main extends Application {
                 System.out.println("Nyertel");
                 jatekVege = true;
                 Nyertel = 2;
-
-
-
-                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                alert.setTitle("Nyertel");
-                alert.setHeaderText(null);
-                alert.setGraphic(null);
-                alert.setContentText("Gratulalok Nyertel! Szeretnel uj jatekot kezdeni?");
-
-                Optional<ButtonType> result = alert.showAndWait();
-                if (result.get() == ButtonType.OK)
-                {
-                    reset(stage31);
-                } else
-                {
-
-                }
-
-
+                popUpAblak();
 
 
             }
@@ -175,8 +174,7 @@ public class Main extends Application {
 
 
 
-        // Tablak kozepen
-
+        // Tablak kozepen + felirat
         Label labelSz1 = new Label("   1");
         font(labelSz1);
         Label labelSz2 = new Label("2");
@@ -292,7 +290,26 @@ public class Main extends Application {
 
         return root;
 
+    }
 
+    public void print(WritableImage writableImage, Stage primaryStage) {
+        ImageView imageView =new ImageView(writableImage);
+        Printer printer = Printer.getDefaultPrinter();
+        PageLayout pageLayout = printer.createPageLayout(Paper.A4, PageOrientation.LANDSCAPE, Printer.MarginType.DEFAULT);
+        double scaleX = pageLayout.getPrintableWidth() / imageView.getBoundsInParent().getWidth();
+        double scaleY = pageLayout.getPrintableHeight() / imageView.getBoundsInParent().getHeight();
+        imageView.getTransforms().add(new Scale(scaleX, scaleY));
+
+        PrinterJob job = PrinterJob.createPrinterJob();
+        if (job != null) {
+            boolean successPrintDialog = job.showPrintDialog(primaryStage.getOwner());
+            if(successPrintDialog){
+                boolean success = job.printPage(pageLayout,imageView);
+                if (success) {
+                    job.endJob();
+                }
+            }
+        }
     }
 
     private Label font(Label label){
@@ -338,24 +355,52 @@ public class Main extends Application {
                 System.out.println("Vesztettel");
                 Nyertel = 1;
                 jatekVege = true;
+                popUpAblak();
 
-                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                alert.setTitle("Vesztettel");
-                alert.setHeaderText(null);
-                alert.setGraphic(null);
-                alert.setContentText("Vesztettel, szeretnel uj jatekot kezdeni?");
 
-                Optional<ButtonType> result = alert.showAndWait();
-                if (result.get() == ButtonType.OK)
-                {
-                    reset(stage31);
-                } else
-                {
-
-                }
                 //System.exit(0);
             }
         }
+    }
+
+    public void popUpAblak(){
+
+
+        if(Nyertel == 1)
+        {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Vesztettel");
+            alert.setHeaderText(null);
+            alert.setGraphic(null);
+            alert.setContentText("Vesztettel, szeretnel uj jatekot kezdeni?");
+
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK)
+            {
+                reset(stage31);
+            } else
+            {
+
+            }
+        }
+        else if(Nyertel == 2)
+        {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Nyertel");
+            alert.setHeaderText(null);
+            alert.setGraphic(null);
+            alert.setContentText("Gratulalok Nyertel! Szeretnel uj jatekot kezdeni?");
+
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK)
+            {
+                reset(stage31);
+            } else
+            {
+
+            }
+        }
+
     }
 
     private void reset( Stage primaryStage){

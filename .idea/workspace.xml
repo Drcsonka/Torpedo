@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="146f7522-ff00-47a5-82b3-b30c11b35cc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/Tabla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/Tabla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Torpedo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Torpedo/Main.class" afterDir="false" />
@@ -41,6 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -84,30 +87,42 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="385" y="103" width="811" height="669" key="#Project_Structure/0.23.1440.797@0.23.1440.797" timestamp="1587559636761" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1588020881536">
+    <state x="408" y="204" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588677074711">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="408" y="204" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1588677074711" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1589821897685">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1588020881536" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1588020881535">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1589821897685" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1589821897684">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1587561720117" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1588020881535" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1588020881534">
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1589821897684" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1589821897683">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1587561720116" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1588020881534" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1588020881536">
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1589821897683" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1589821897685">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1588020881536" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1589821897685" />
     <state x="286" y="23" key="SettingsEditor" timestamp="1587560594186">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="286" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1587560594186" />
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1588677186999">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1588677186999" />
+    <state x="97" y="159" key="new project wizard" timestamp="1589640013830">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="97" y="159" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1589640013830" />
     <state x="426" y="75" key="refactoring.ChangeSignatureDialog" timestamp="1588015424407">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -77,7 +77,7 @@ public class Tabla extends Parent {
             this.x = x;
             this.y = y;
             this.tabla = tabla;
-            setFill(Color.LIGHTBLUE);
+            setFill(Color.LIGHTSKYBLUE);
             setStroke(Color.BLACK);
 
             if( x ==10 || y ==0)
@@ -236,7 +236,7 @@ public class Tabla extends Parent {
                     Cella cella = getCella(x, i);
                     cella.hajo = hajo;
                     if (!ellenseg) {
-                        cella.setFill(Color.DARKBLUE);
+                        cella.setFill(Color.BROWN);
                         cella.setStroke(Color.BLACK);
                     }
                 }
@@ -246,7 +246,7 @@ public class Tabla extends Parent {
                     Cella cella = getCella(i, y);
                     cella.hajo = hajo;
                     if (!ellenseg) {
-                        cella.setFill(Color.DARKBLUE);
+                        cella.setFill(Color.BROWN);
                         cella.setStroke(Color.BLACK);
                     }
                 }
