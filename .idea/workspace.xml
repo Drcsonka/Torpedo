@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="146f7522-ff00-47a5-82b3-b30c11b35cc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/Pelda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/Tabla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/Tabla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Torpedo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Torpedo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Torpedo/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Torpedo/Tabla$Cella.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Torpedo/Tabla$Cella.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Torpedo/Tabla.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Torpedo/Tabla.class" afterDir="false" />
     </list>
@@ -19,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -47,12 +48,27 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Torpedo.Main" />
-      <module name="Torpedo" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="Torpedo_ copy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pelda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Torpedo.Pelda" />
+      <module name="Torpedo_ copy" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Torpedo.*" />
@@ -65,7 +81,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Pelda" />
       </list>
     </recent_temporary>
   </component>
@@ -83,46 +100,60 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="396" y="126" key="#Main" timestamp="1589911666336">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="396" y="126" key="#Main/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589911666336" />
     <state x="385" y="103" width="811" height="669" key="#Project_Structure" timestamp="1587559636761">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="385" y="103" width="811" height="669" key="#Project_Structure/0.23.1440.797@0.23.1440.797" timestamp="1587559636761" />
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser" timestamp="1589917982844">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589917982844" />
     <state x="408" y="204" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588677074711">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="408" y="204" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1588677074711" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1589821897685">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1589990091130">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1589821897685" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1589821897684">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589990091130" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1589990091129">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1587561720117" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1589821897684" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1589821897683">
+    <state width="1398" height="229" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589990091129" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1589990091128">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1587561720116" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1589821897683" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1589821897685">
+    <state width="1398" height="229" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589990091128" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1589990091129">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1589821897685" />
-    <state x="286" y="23" key="SettingsEditor" timestamp="1587560594186">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589990091129" />
+    <state x="286" y="23" key="SettingsEditor" timestamp="1589990412132">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="286" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1587560594186" />
+    <state x="286" y="23" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589990412132" />
     <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1588677186999">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1588677186999" />
-    <state x="97" y="159" key="new project wizard" timestamp="1589640013830">
+    <state x="97" y="159" key="new project wizard" timestamp="1589990177066">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="97" y="159" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1589640013830" />
+    <state x="97" y="159" key="new project wizard/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589990177066" />
     <state x="426" y="75" key="refactoring.ChangeSignatureDialog" timestamp="1588015424407">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

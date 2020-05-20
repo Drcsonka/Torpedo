@@ -1,12 +1,10 @@
 package Torpedo;
 
-import java.sql.SQLOutput;
 import java.util.Optional;
 import java.util.Random;
 
 import javafx.application.Application;
 
-import javafx.event.EventDispatcher;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.print.*;
@@ -20,7 +18,6 @@ import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.transform.Scale;
@@ -28,10 +25,11 @@ import javafx.stage.Stage;
 
 import Torpedo.Tabla.Cella;
 
-public class Main extends Application {
+public class Pelda {
 
     public static boolean jatekVege = false;
-    private boolean jatekKezdet = false;
+    //public static Parent scene1= new Scene(createContent());
+    public boolean jatekKezdet = false;
     private Tabla tablaE, tablaJ;
     int Nyertel = 0;
 
@@ -47,7 +45,7 @@ public class Main extends Application {
 
 
 
-
+/*
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Torpedo");
@@ -67,10 +65,14 @@ public class Main extends Application {
 
     }
 
+*/
 
+//new Foo().nonStaticMethod();
+//public Scene scene1 = new Scene(createContent());
 
     public Parent createContent() {
         BorderPane root = new BorderPane();
+
 
         root.setPadding(new Insets(0, 60, 0, 150));
         root.setPrefSize(800, 850);
@@ -93,29 +95,6 @@ public class Main extends Application {
         VBox menu = new VBox( 20,menuT, resetButton, button2);
         menu.setAlignment(Pos.TOP_CENTER);
         root.setRight(menu);
-
-        Node printnode = new Label("321");
-
-
-        /*
-        Rectangle rect = new Rectangle(0,0,root.getWidth(),root.getHeight());
-        root.setClip(rect);
-        WritableImage writableImage;
-        writableImage = new WritableImage((int) root.getPrefWidth(),
-                (int) root.getPrefHeight());
-        root.snapshot(null, writableImage);
-
-        EventDispatcher eventDispatcher = root.getEventDispatcher();
-        eventDispatcher.printLandscape(writableImage);
-*/
-
-
-
-        //VBox vbox2 = new VBox(50, tablaE, tablaJ);
-        //vbox2.setAlignment(Pos.CENTER);
-
-        //root.setCenter(vbox2);
-
 
 
 
@@ -338,7 +317,7 @@ public class Main extends Application {
 
 
 
-    private void EllensegLepese() {
+    public void EllensegLepese() {
 
 
         while (ellensegKore && !jatekVege) {
@@ -416,8 +395,4 @@ public class Main extends Application {
     }
 
 
-
-    public static void main(String[] args) {
-        launch(args);
-    }
 }
