@@ -24,24 +24,24 @@ import javafx.scene.transform.Scale;
 import javafx.stage.Stage;
 
 import Torpedo.Tabla.Cella;
+import main.MyApplication;
 
 public class Pelda {
 
     public static boolean jatekVege = false;
     //public static Parent scene1= new Scene(createContent());
-    public boolean jatekKezdet = false;
-    private Tabla tablaE, tablaJ;
-    int Nyertel = 0;
+    static public boolean jatekKezdet = false;
+    static private Tabla tablaE, tablaJ;
+    static int Nyertel = 0;
 
 
-    private int hatralevoHajok = 5;
-    Button resetButton = new Button("Reset");
-    Button button2 = new Button("Teszt1");
-    Text menuT = new Text("Menu");
-    private boolean ellensegKore = false;
+    static private int hatralevoHajok = 5;
+    static Button resetButton = new Button("Reset");
+    static Text menuT = new Text("Menu");
+    static private boolean ellensegKore = false;
 
-    private Random random = new Random();
-    private Stage stage31;
+    static private Random random = new Random();
+    //static private Stage stage31;
 
 
 
@@ -70,7 +70,8 @@ public class Pelda {
 //new Foo().nonStaticMethod();
 //public Scene scene1 = new Scene(createContent());
 
-    public Parent createContent() {
+
+    public static Parent createContent() {
         BorderPane root = new BorderPane();
 
 
@@ -78,9 +79,6 @@ public class Pelda {
         root.setPrefSize(800, 850);
         resetButton.setPrefWidth(150);
         resetButton.setPrefHeight(50);
-
-        button2.setPrefHeight(50);
-        button2.setPrefWidth(100);
 
         // Top margo
 
@@ -92,7 +90,7 @@ public class Pelda {
 
 
 
-        VBox menu = new VBox( 20,menuT, resetButton, button2);
+        VBox menu = new VBox( 20,menuT, resetButton);
         menu.setAlignment(Pos.TOP_CENTER);
         root.setRight(menu);
 
@@ -291,7 +289,7 @@ public class Pelda {
         }
     }
 
-    private Label font(Label label){
+    private static Label font(Label label){
 
         label.setTextFill(Color.web("#FFFFFF"));
         label.setFont(new Font("Arial", 17));
@@ -301,7 +299,7 @@ public class Pelda {
 
 
 
-    private void startGame() {
+    private static void startGame() {
         int nagysag = 5;
 
         while (nagysag > 0) {
@@ -317,7 +315,7 @@ public class Pelda {
 
 
 
-    public void EllensegLepese() {
+    public static void EllensegLepese() {
 
 
         while (ellensegKore && !jatekVege) {
@@ -342,7 +340,7 @@ public class Pelda {
         }
     }
 
-    public void popUpAblak(){
+    public static void popUpAblak(){
 
 
         if(Nyertel == 1)
@@ -356,7 +354,7 @@ public class Pelda {
             Optional<ButtonType> result = alert.showAndWait();
             if (result.get() == ButtonType.OK)
             {
-                reset(stage31);
+                reset(MyApplication.stage31);
             } else
             {
 
@@ -373,7 +371,7 @@ public class Pelda {
             Optional<ButtonType> result = alert.showAndWait();
             if (result.get() == ButtonType.OK)
             {
-                reset(stage31);
+                reset(MyApplication.stage31);
             } else
             {
 
@@ -382,7 +380,7 @@ public class Pelda {
 
     }
 
-    private void reset( Stage primaryStage){
+    private static void reset(Stage primaryStage){
 
             primaryStage.close();
         jatekKezdet = false;
