@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
 
-<TableView fx:id="kisTabla" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="309.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="KisTablaController.controller">
-  <columns>
-    <TableColumn prefWidth="95.0" text="Player" />
-    <TableColumn prefWidth="240.0" text="Move ( X - Y - Hit or No hit )" />
-  </columns>
-</TableView>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KisTablaController">
+   <children>
+      <TableView fx:id="kisTabla" layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="308.0">
+         <columns>
+            <TableColumn fx:id="player" prefWidth="95.0" text="Player" />
+            <TableColumn fx:id="moves" prefWidth="204.0" text="Move ( X - Y - Hit or No hit )" />
+         </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="357.0" layoutY="42.0" mnemonicParsing="false" onAction="#back" prefHeight="46.0" prefWidth="112.0" text="Back" />
+      <Button fx:id="exitButton" layoutX="357.0" layoutY="398.0" mnemonicParsing="false" onAction="#exit" prefHeight="46.0" prefWidth="112.0" text="Exit" />
+   </children>
+</Pane>

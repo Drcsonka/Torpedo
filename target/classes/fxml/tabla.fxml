@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane prefHeight="444.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KisTablaController">
+   <children>
+      <TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="319.0">
+        <columns>
+          <TableColumn prefWidth="117.0" text="Player" />
+          <TableColumn prefWidth="184.0" text="Move" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="334.0" layoutY="48.0" mnemonicParsing="false" onAction="#goback" prefHeight="54.0" prefWidth="115.0" text="Back" />
+      <Button fx:id="exitButton" layoutX="334.0" layoutY="329.0" mnemonicParsing="false" onAction="#leave" prefHeight="54.0" prefWidth="115.0" text="Exit" />
+   </children>
+</Pane>

@@ -1,10 +1,16 @@
 package Torpedo;
 
+import java.io.IOException;
 import java.util.Optional;
 import java.util.Random;
 
+import controller.GameController;
+import controller.KisTablaController;
+import dataTabla.Main;
 import javafx.application.Application;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.print.*;
@@ -27,7 +33,7 @@ import javafx.stage.Stage;
 import Torpedo.Tabla.Cella;
 import main.MyApplication;
 
-public class Pelda extends Application  {
+public class Pelda  {
 
     public  static boolean jatekVege = false;
     //public static Parent scene1= new Scene(createContent());
@@ -38,9 +44,18 @@ public class Pelda extends Application  {
 
      private static int hatralevoHajok = 5;
      static Button resetButton = new Button("Reset");
+     static Button tablaButton = new Button( "Lepesek");
      static Text menuT = new Text("Menu");
      private static boolean ellensegKore = false;
+     static String[] ybetuk = {"A","B","C","D","E","F","G","H","I","J"};
+     public static String xyJ;
+     public static String xyE;
+     public static int lepes= 0;
+
     private static Label Lepes= new Label("lepes");
+    private static Label LepesJ= new Label("lepes");
+
+    public static boolean jatekoslepese = true;
 
 
      private static Random random = new Random();
@@ -57,23 +72,23 @@ public class Pelda extends Application  {
     }
 */
 
-
+/*
     @Override
     public void start(Stage primaryStage) throws Exception {
-        //Scene scene1 = new Scene(createContent());
+        scene scene1 = new Scene(createContent());
 
-        //scene1.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
+        scene1.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
 
-        //this.stage31 = primaryStage;
+        this.stage31 = primaryStage;
 
-/*
+
         resetButton.setOnAction(e -> {
             reset(primaryStage);
         });
-*/
+
 
     }
-
+*/
 
 
 //new Foo().nonStaticMethod();
@@ -88,9 +103,13 @@ public class Pelda extends Application  {
         root.setPrefSize(800, 850);
         resetButton.setPrefWidth(150);
         resetButton.setPrefHeight(50);
+        tablaButton.setPrefWidth(150);
+        tablaButton.setPrefHeight(50);
 
         Lepes.setPrefHeight(50);
         Lepes.setPrefWidth(150);
+        LepesJ.setPrefHeight(50);
+        LepesJ.setPrefWidth(150);
 
         // Top margo
 
@@ -99,10 +118,21 @@ public class Pelda extends Application  {
         root.setTop(topNode);
         BorderPane.setMargin(topNode, insets);
 
+        resetButton.setOnAction(e -> {
+                    reset(MyApplication.stage31);
+        });
 
 
+        tablaButton.setOnAction(e -> {
+            try {
+                KisTablaController.tablazat( e );
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
 
-        VBox menu = new VBox( 20,menuT, resetButton, Lepes);
+
+        VBox menu = new VBox( 20,menuT, resetButton, tablaButton, Lepes, LepesJ);
         menu.setAlignment(Pos.TOP_CENTER);
         root.setRight(menu);
 
@@ -133,7 +163,22 @@ public class Pelda extends Application  {
             if (cell.wasShot)
                 return;
 
+            String xJ = String.valueOf(cell.x+1);
+            String y22 = String.valueOf(cell.y+1);
+            String yJ = ybetuk[cell.y];
+            xyJ = xJ+yJ;
+            jatekoslepese = true;
+            lepes++;
+            try {
+                Main.ujkiiras();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            LepesJ.setText(xyJ);
+
             ellensegKore = !cell.loves();
+
 
             if (tablaE.hajok == 4) {
                 System.out.println("Nyertel");
@@ -286,6 +331,7 @@ public class Pelda extends Application  {
 
     }
 
+/*
     public void print(WritableImage writableImage, Stage primaryStage) {
         ImageView imageView =new ImageView(writableImage);
         Printer printer = Printer.getDefaultPrinter();
@@ -305,6 +351,8 @@ public class Pelda extends Application  {
             }
         }
     }
+
+    */
 
     private static Label font(Label label){
 
@@ -340,11 +388,15 @@ public class Pelda extends Application  {
             int y = random.nextInt(10);
             String x1 = String.valueOf(x+1);
             String y21 = String.valueOf(y+1);
-            String[] ybetuk = {"A","B","C","D","E","F","G","H","I","J"};
-            String y1 = ybetuk[y];
-            String xy = x1+y1;
 
-            Lepes.setText(xy);
+            String yE = ybetuk[y];
+            String xE = x1;
+
+            xyE = xE + yE;
+            jatekoslepese = false;
+
+            Lepes.setText(xyE);
+
 
             Cella cella = tablaJ.getCella(x, y);
             if (cella.wasShot)
@@ -357,7 +409,7 @@ public class Pelda extends Application  {
                 Nyertel = 1;
                 jatekVege = true;
                 popUpAblak();
-                
+
             }
         }
     }
@@ -402,11 +454,11 @@ public class Pelda extends Application  {
 
 
     }
-    public Scene scene1 = new Scene(createContent());
+    //public Scene scene1 = new Scene(createContent());
 
     private static void reset(Stage primaryStage){
 
-            primaryStage.close();
+        primaryStage.close();
         jatekKezdet = false;
         hatralevoHajok = 5;
         Scene scene2 = new Scene(createContent());
