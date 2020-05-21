@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="kisTabla" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="309.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="KisTablaController.controller">
+  <columns>
+    <TableColumn prefWidth="95.0" text="Player" />
+    <TableColumn prefWidth="240.0" text="Move ( X - Y - Hit or No hit )" />
+  </columns>
+</TableView>

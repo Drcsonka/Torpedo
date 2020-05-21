@@ -11,6 +11,7 @@ import javafx.print.*;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.SubScene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -26,46 +27,54 @@ import javafx.stage.Stage;
 import Torpedo.Tabla.Cella;
 import main.MyApplication;
 
-public class Pelda {
+public class Pelda extends Application  {
 
-    public static boolean jatekVege = false;
+    public  static boolean jatekVege = false;
     //public static Parent scene1= new Scene(createContent());
-    static public boolean jatekKezdet = false;
-    static private Tabla tablaE, tablaJ;
-    static int Nyertel = 0;
+     public static boolean jatekKezdet = false;
+     private static Tabla tablaE, tablaJ;
+     static int Nyertel = 0;
 
 
-    static private int hatralevoHajok = 5;
-    static Button resetButton = new Button("Reset");
-    static Text menuT = new Text("Menu");
-    static private boolean ellensegKore = false;
-
-    static private Random random = new Random();
-    //static private Stage stage31;
+     private static int hatralevoHajok = 5;
+     static Button resetButton = new Button("Reset");
+     static Text menuT = new Text("Menu");
+     private static boolean ellensegKore = false;
+    private static Label Lepes= new Label("lepes");
 
 
+     private static Random random = new Random();
+     //private Stage stage31;
+     //public SubScene sub = new SubScene(createContent(), 800,850);
 
 /*
+    public static SubScene createSubScene(Parent root) {
+
+
+        SubScene subScene = new SubScene(root, 500, 400);
+
+        return subScene;
+    }
+*/
+
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Torpedo");
-        primaryStage.setResizable(false);
-        Scene scene1 = new Scene(createContent());
+        //Scene scene1 = new Scene(createContent());
+
         //scene1.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
 
-        primaryStage.setScene(scene1);
-        primaryStage.show();
-        this.stage31 = primaryStage;
+        //this.stage31 = primaryStage;
 
-
-
+/*
         resetButton.setOnAction(e -> {
             reset(primaryStage);
         });
+*/
 
     }
 
-*/
+
 
 //new Foo().nonStaticMethod();
 //public Scene scene1 = new Scene(createContent());
@@ -80,6 +89,9 @@ public class Pelda {
         resetButton.setPrefWidth(150);
         resetButton.setPrefHeight(50);
 
+        Lepes.setPrefHeight(50);
+        Lepes.setPrefWidth(150);
+
         // Top margo
 
         Insets insets = new Insets(10);
@@ -90,7 +102,7 @@ public class Pelda {
 
 
 
-        VBox menu = new VBox( 20,menuT, resetButton);
+        VBox menu = new VBox( 20,menuT, resetButton, Lepes);
         menu.setAlignment(Pos.TOP_CENTER);
         root.setRight(menu);
 
@@ -108,6 +120,7 @@ public class Pelda {
         Background background = new Background(backgroundimage);
 
         root.setBackground(background);
+
 
 
 
@@ -237,11 +250,13 @@ public class Pelda {
         font(labelB210);
 
 
-
         VBox Betu11 = new VBox(13, labelB1, labelB2,labelB3, labelB4,labelB5,labelB6,labelB7,labelB8,labelB9,labelB10);
         Betu11.setAlignment(Pos.CENTER);
         root.setCenter(Betu11);
         HBox Szam11 = new HBox(22, labelSz1, labelSz2,labelSz3, labelSz4,labelSz5,labelSz6,labelSz7,labelSz8,labelSz9,labelSz210);
+
+
+
 
         root.setCenter(Szam11);
 
@@ -263,6 +278,8 @@ public class Pelda {
 
 
         root.setCenter(tablak);
+
+
 
 
         return root;
@@ -321,6 +338,13 @@ public class Pelda {
         while (ellensegKore && !jatekVege) {
             int x = random.nextInt(10);
             int y = random.nextInt(10);
+            String x1 = String.valueOf(x+1);
+            String y21 = String.valueOf(y+1);
+            String[] ybetuk = {"A","B","C","D","E","F","G","H","I","J"};
+            String y1 = ybetuk[y];
+            String xy = x1+y1;
+
+            Lepes.setText(xy);
 
             Cella cella = tablaJ.getCella(x, y);
             if (cella.wasShot)
@@ -333,9 +357,7 @@ public class Pelda {
                 Nyertel = 1;
                 jatekVege = true;
                 popUpAblak();
-
-
-                //System.exit(0);
+                
             }
         }
     }
@@ -378,7 +400,9 @@ public class Pelda {
             }
         }
 
+
     }
+    public Scene scene1 = new Scene(createContent());
 
     private static void reset(Stage primaryStage){
 
