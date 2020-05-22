@@ -3,20 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="146f7522-ff00-47a5-82b3-b30c11b35cc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/Pelda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/Pelda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/KisTablaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/KisTablaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataTabla/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataTabla/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dataTabla/Tablazat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataTabla/Tablazat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/kistabla.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/kistabla.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Torpedo_ copy.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tablazat.json" beforeDir="false" afterPath="$PROJECT_DIR$/tablazat.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Torpedo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Torpedo-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Torpedo/Pelda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Torpedo/Pelda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GameController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/KisTablaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/KisTablaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/kistabla.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/kistabla.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/groverconfig13774261474516046884/instrumentation.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/groverconfig14488912217346093986/instrumentation.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/groverconfig14668319444292514657/instrumentation.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataTabla/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataTabla/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataTabla/Tablazat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataTabla/Tablazat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/Torpedo-1.0-SNAPSHOT-clover.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/Torpedo-1.0-SNAPSHOT-clover.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Pelda$__CLR4_4_1axaxkags3rym$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Pelda$__CLR4_4_1axaxkags3rym.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Pelda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/Torpedo/Pelda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/GameController$__CLR4_4_1lclckags3s0o$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/GameController$__CLR4_4_1lclckags3s0o.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/controller/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/MyApplication$__CLR4_4_1ldldkags3s0x$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/MyApplication$__CLR4_4_1ldldkags3s0x.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/MyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/main/MyApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/clover.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/original-Torpedo-1.0-SNAPSHOT-clover.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/original-Torpedo-1.0-SNAPSHOT-clover.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/Torpedo/Pelda.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/Torpedo/Pelda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/main/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/main/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-Torpedo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-Torpedo-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,34 +131,34 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="408" y="204" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1588677074711" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1590093213988">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1590177194956">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590065263967" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590093213988" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1590093213986">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590177194956" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1590177194955">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1587561720117" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590065263966" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590093213986" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1590093213986">
+    <state width="1398" height="229" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590177194955" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1590177194954">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1587561720116" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590065263965" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590093213986" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1590093213987">
+    <state width="1398" height="229" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590177194954" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1590177194955">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590065263967" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590093213987" />
-    <state x="258" y="123" key="Maven.ArtifactSearchDialog" timestamp="1590082880962">
+    <state width="1398" height="229" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590177194955" />
+    <state x="258" y="123" key="Maven.ArtifactSearchDialog" timestamp="1590171140638">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="258" y="123" key="Maven.ArtifactSearchDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590082880962" />
+    <state x="258" y="123" key="Maven.ArtifactSearchDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590171140638" />
     <state x="286" y="23" key="SettingsEditor" timestamp="1589990412132">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

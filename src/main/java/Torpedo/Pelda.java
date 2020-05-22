@@ -1,5 +1,6 @@
 package Torpedo;
 
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Optional;
 import java.util.Random;
@@ -32,6 +33,7 @@ import javafx.stage.Stage;
 
 import Torpedo.Tabla.Cella;
 import main.MyApplication;
+import org.json.simple.JSONObject;
 
 public class Pelda  {
 
@@ -122,7 +124,6 @@ public class Pelda  {
                     reset(MyApplication.stage31);
         });
 
-
         tablaButton.setOnAction(e -> {
             try {
                 KisTablaController.tablazat( e );
@@ -170,7 +171,7 @@ public class Pelda  {
             jatekoslepese = true;
             lepes++;
             try {
-                Main.ujkiiras();
+                Main.ujtablaadat();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -396,6 +397,11 @@ public class Pelda  {
             jatekoslepese = false;
 
             Lepes.setText(xyE);
+            try {
+                Main.ujtablaadat();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
 
             Cella cella = tablaJ.getCella(x, y);

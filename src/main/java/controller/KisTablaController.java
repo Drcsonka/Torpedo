@@ -1,6 +1,8 @@
 package controller;
 
 import Torpedo.Pelda;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import dataTabla.Tablazat;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,10 +13,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import main.MyApplication;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import javax.swing.table.TableColumn;
 import javax.swing.text.TableView;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import org.json.*;
 
 public class KisTablaController {
 
@@ -26,6 +34,7 @@ public class KisTablaController {
 
     @FXML
     private TableColumn lepes;
+
 
 
     public void goback(ActionEvent actionEvent) throws IOException {
