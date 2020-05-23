@@ -1,9 +1,12 @@
 package Torpedo.dataTabla;
 
+import Torpedo.jatektabla.Pelda;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -15,11 +18,12 @@ import java.util.ArrayList;
 public class readFromJSON {
 
     /**
-     * Létrehozzunk a {@Code beolvasLista}beolvasListat, amibe majd beolvassuk az adatokat.
+     * Létrehozzunk a beolvasLista beolvasListat, amibe majd beolvassuk az adatokat.
      */
     public static JSONArray beolvasLista;
     public static ArrayList<String> lepesek = new ArrayList<>();
     public static ArrayList<String> jatekos = new ArrayList<>();
+    private static final Logger logger = LogManager.getLogger(readFromJSON.class);
 
     /**
      * Ez a beolvas metódusunk, itt fogjuk létrehozni a <Code>reader</Code> -t aminek
@@ -54,7 +58,7 @@ public class readFromJSON {
      * a <Code>jatekos</Code>-ba fog kerülni a Játékos adatok, vagyis az, hogy Ellenség vagy Játékos.
      * A <Code>lepesek</Code>-be viszont az játékos lépse.
      * Ez azért van, hogy későbbiekben ezekre az adatokra könnyebben lehessen hivatkozni.
-     * @param jatekosLepes
+     * @param jatekosLepes valami.
      */
     public static void listParting(JSONObject jatekosLepes)
     {
@@ -71,15 +75,19 @@ public class readFromJSON {
         lepesek.add(jatekoslepes);
 
     }
-/*
-    public static void kiakarokirni(){
-        System.out.println(beolvasLista);
-        int sizeer = beolvasLista.size()/2;
-        System.out.println(sizeer);
 
-        System.out.println(Pelda.lepes);
+    /**
+     * valami.
+     */
+    public static void kiakarokirni(){
+        //System.out.println(beolvasLista);
+        int sizeer = beolvasLista.size()/2;
+        logger.debug(beolvasLista);
+        logger.debug(sizeer);
+
+        //System.out.println(Pelda.lepes);
 
     }
-    */
+
 
 }

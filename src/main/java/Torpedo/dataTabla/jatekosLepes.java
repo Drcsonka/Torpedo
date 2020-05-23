@@ -25,24 +25,29 @@ public class jatekosLepes {
 
     /**
      * A játékos nevét visszaadó metódus.
+     * @return visszatér a játékos nevével.
      */
+
     public String getJatekosNev(){
             return jatekosNev.get();
         }
     /**
      * A játékos nevét beállító metódus.
+     * @param jatekosNev játékos neve.
      */
         public void setJatekosNev(String jatekosNev){
             this.jatekosNev.set(jatekosNev);
         }
     /**
      * A játékos lépését visszaadó metódus.
+     * @return A játékos lépsét adja vissza.
      */
         public String getLepesek(){
             return lepesek.get();
         }
     /**
      * A játékos nevét beállító metódus.
+     * @param lepesek a játékos lépése.
      */
         public void setLepesek(String lepesek){
 

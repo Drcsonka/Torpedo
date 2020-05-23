@@ -19,9 +19,9 @@ public class Tabla extends Parent {
     public int hajok = 5;
 
     /**
-     *
-     * @param ellenseg
-     * @param handler
+     * valami.
+     * @param ellenseg valami.
+     * @param handler valami.
      */
     public Tabla(boolean ellenseg, EventHandler<? super MouseEvent> handler) {
         this.ellenseg= ellenseg;
@@ -49,10 +49,10 @@ public class Tabla extends Parent {
         private final Tabla tabla;
 
         /**
-         *
-         * @param x
-         * @param y
-         * @param tabla
+         * valami.
+         * @param x valami.
+         * @param y valami.
+         * @param tabla valami.
          */
         public Cella(int x, int y, Tabla tabla) {
             super(32, 32);

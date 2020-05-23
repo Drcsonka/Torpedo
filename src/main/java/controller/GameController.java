@@ -78,7 +78,7 @@ public class GameController {
 
 
         readFromJSON.beolvas();
-        //readFromJSON.kiakarokirni();
+        readFromJSON.kiakarokirni();
         // GameController.reverse(readFromJSON.jatekos);
         KisTablaController.feltoltes();
         Parent root = FXMLLoader.load(KisTablaController.class.getResource("/fxml/tabla.fxml"));
