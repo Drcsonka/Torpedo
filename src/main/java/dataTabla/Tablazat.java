@@ -5,6 +5,10 @@ package dataTabla;
 
 @lombok.Data
 
+/**
+ * Ez lesz a táblázat stílus class.
+ */
+
 
 public class Tablazat {
 

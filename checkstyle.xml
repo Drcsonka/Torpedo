@@ -6,13 +6,18 @@
        <module name="JavadocPackage"/>
        <module name="TreeWalker">
            <module name="JavadocVariable">
-               <property name="scope" value="public"/>
+               <property name="severity" value="ignore"/>
            </module>
-           <module name="MissingJavadocType"/>
+           <module name="JavadocType">
+               <property name="severity" value="ignore"/>
+           </module>
            <module name="MissingJavadocMethod"/>
            <module name="MissingJavadocPackage"/>
            <module name="JavadocType"/>
-           <module name="JavadocMethod"/>
+           <module name="JavadocMethod">
+               <property name="severity" value="ignore"/>
+           </module>
+
            <module name="JavadocStyle"/>
        </module>
    </module>

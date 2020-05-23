@@ -69,7 +69,10 @@ public class Pelda  {
 //new Foo().nonStaticMethod();
 //public Scene scene1 = new Scene(createContent());
 
-
+    /**
+     * valami.
+     * @return valami.
+     */
     public static Parent createContent() {
         BorderPane root = new BorderPane();
 
@@ -320,7 +323,9 @@ public class Pelda  {
     }
 
 
-
+    /**
+     * valami.
+     */
     public static void EllensegLepese() {
 
 

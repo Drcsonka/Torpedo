@@ -18,6 +18,11 @@ public class Tabla extends Parent {
 
     public int hajok = 5;
 
+    /**
+     *
+     * @param ellenseg
+     * @param handler
+     */
     public Tabla(boolean ellenseg, EventHandler<? super MouseEvent> handler) {
         this.ellenseg= ellenseg;
         for (int y = 0; y < 10; y++) {
@@ -43,6 +48,12 @@ public class Tabla extends Parent {
 
         private final Tabla tabla;
 
+        /**
+         *
+         * @param x
+         * @param y
+         * @param tabla
+         */
         public Cella(int x, int y, Tabla tabla) {
             super(32, 32);
             this.x = x;
@@ -53,6 +64,10 @@ public class Tabla extends Parent {
 
         }
 
+        /**
+         * Valami.
+         * @return valami.
+         */
         public boolean loves() {
             if(Pelda.jatekVege)
             {
@@ -74,6 +89,12 @@ public class Tabla extends Parent {
         }
     }
 
+    /**
+     * Valami.
+     * @param x valami.
+     * @param y valami.
+     * @return valami.
+     */
     public Cella getCella(int x, int y) {
         return (Cella)((HBox)sorok.getChildren().get(y)).getChildren().get(x);
     }
@@ -155,7 +176,13 @@ public class Tabla extends Parent {
     }
 
 
-
+    /**
+     * Valami.
+     * @param hajo valami.
+     * @param x valami.
+     * @param y valami.
+     * @return valami.
+     */
     public boolean hajoLerakas(Hajo hajo, int x, int y) {
         if (Lerakhato(hajo, x, y)) {
             int length = hajo.nagysag;

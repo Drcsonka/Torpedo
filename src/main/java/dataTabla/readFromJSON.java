@@ -10,14 +10,28 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Ezzel az osztállyal olvasunk adatokat a .json fájlunkból.
+ */
 public class readFromJSON {
 
-    public static JSONArray employeeList;
+    /**
+     * Létrehozzunk a {@Code beolvasLista}beolvasListat, amibe majd beolvassuk az adatokat.
+     */
+    public static JSONArray beolvasLista;
     public static ArrayList<String> lepesek = new ArrayList<>();
     public static ArrayList<String> jatekos = new ArrayList<>();
+
+    /**
+     * Ez a beolvas metódusunk, itt fogjuk létrehozni a <Code>reader</Code> -t aminek
+     * megadjuk a fájlt, hogy miből olvasson majd.
+     * Majd az <Code>obj</Code>-be berakjuk fájl tartalmat,
+     * ezt a <Code>beolvasLista</Code>-ba Array-é átalakítva berakjuk.
+     * A végén meghívjuk a listánkra a listPartimg() metódust, ami majd felbontja ezt.
+     *
+     */
     public static void beolvas()
     {
-        //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
 
         try (FileReader reader = new FileReader("tablazat.json"))
@@ -25,9 +39,9 @@ public class readFromJSON {
 
             Object obj = jsonParser.parse(reader);
 
-            employeeList = (JSONArray) obj;
+            beolvasLista = (JSONArray) obj;
 
-            employeeList.forEach( emp -> parseEmployeeObject( (JSONObject) emp ) );
+            beolvasLista.forEach( emp -> listParting( (JSONObject) emp ) );
 
         } catch (ParseException | IOException e) {
             e.printStackTrace();
@@ -35,31 +49,38 @@ public class readFromJSON {
 
 
     }
-    public static void parseEmployeeObject(JSONObject employee)
+
+    /**
+     * A listParting metódus arra lesz jó, hogy a már beolvasott listánkat, szétszedjük, két darab ArrayListre,
+     * a <Code>jatekos</Code>-ba fog kerülni a Játékos adatok, vagyis az, hogy Ellenség vagy Játékos.
+     * A <Code>lepesek</Code>-be viszont az játékos lépse.
+     * Ez azért van, hogy későbbiekben ezekre az adatokra könnyebben lehessen hivatkozni.
+     * @param jatekosLepes
+     */
+    public static void listParting(JSONObject jatekosLepes)
     {
         //Get employee object within list
-        JSONObject employeeObject = (JSONObject) employee.get("Action");
+        JSONObject listaObject = (JSONObject) jatekosLepes.get("Action");
 
         //Get employee first name
-        String firstName = (String) employeeObject.get("Jatekos");
-        jatekos.add(firstName);
+        String jatekosnev = (String) listaObject.get("Jatekos");
+        jatekos.add(jatekosnev);
 
 
         //Get employee last name
-        String lastName = (String) employeeObject.get("lepes");
-        lepesek.add(lastName);
+        String jatekoslepes = (String) listaObject.get("lepes");
+        lepesek.add(jatekoslepes);
 
     }
-
+/*
     public static void kiakarokirni(){
-        System.out.println(employeeList);
-        int sizeer = employeeList.size()/2;
+        System.out.println(beolvasLista);
+        int sizeer = beolvasLista.size()/2;
         System.out.println(sizeer);
 
         System.out.println(Pelda.lepes);
 
-
-
     }
+    */
 
 }
