@@ -2,75 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="146f7522-ff00-47a5-82b3-b30c11b35cc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkstyle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/Pelda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/Pelda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataTabla/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataTabla/writeToJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataTabla/jatekosLepes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataTabla/jatekosLepes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/KisTablaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/KisTablaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tablazat.json" beforeDir="false" afterPath="$PROJECT_DIR$/tablazat.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Torpedo/Pelda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Torpedo/Pelda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataTabla/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataTabla/jatekosLepes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataTabla/jatekosLepes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/Torpedo-1.0-SNAPSHOT-clover.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/Torpedo-1.0-SNAPSHOT-clover.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/checkstyle-cachefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/checkstyle-checker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/checkstyle-checker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/BG2 2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Hajo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Hajo$__CLR4_4_100kaji58mr$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Hajo$__CLR4_4_100kaji58mr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Hajo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/Torpedo/Hajo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Pelda$__CLR4_4_1cckaji58p6$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Pelda$__CLR4_4_1cckaji58p6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Pelda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/Torpedo/Pelda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Tabla$Cella.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/Torpedo/Tabla$Cella.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Tabla$__CLR4_4_16363kaji58qe$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Tabla$__CLR4_4_16363kaji58qe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/Torpedo/Tabla.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/Torpedo/Tabla.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/GameController$__CLR4_4_1fhfhkajnv0i0$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/GameController$__CLR4_4_1fhfhkajnv0i0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/controller/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/KisTablaController 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/KisTablaController$__CLR4_4_1gngnkajnv0it$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/KisTablaController$__CLR4_4_1gngnkajnv0it.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/KisTablaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/controller/KisTablaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/dataTabla/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/Main$__CLR4_4_1bcbckaji58ri$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/Main$__CLR4_4_1bcbckaji58ri.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/dataTabla/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/jatekosLepes$__CLR4_4_1c3c3kaji58rs$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/jatekosLepes$__CLR4_4_1c3c3kaji58rs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/jatekosLepes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/dataTabla/jatekosLepes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/readFromJSON$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/dataTabla/readFromJSON$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/readFromJSON$1__CLR4_4_1$AC0 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/readFromJSON$__CLR4_4_1cecekaji58s4$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/readFromJSON$__CLR4_4_1cecekaji58s4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/dataTabla/readFromJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/dataTabla/readFromJSON.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/fxml/tabla 2.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/Main 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/Main$__CLR4_4_1cxcxkaji58sa$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/Main$__CLR4_4_1cxcxkaji58sa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/MyApplication$__CLR4_4_1czczkaji58se$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/MyApplication$__CLR4_4_1czczkaji58se.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/MyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/main/MyApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/clover.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/clover.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/maven-archiver/pom 2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles 2.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/original-Torpedo-1.0-SNAPSHOT-clover 2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/original-Torpedo-1.0-SNAPSHOT-clover.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/original-Torpedo-1.0-SNAPSHOT-clover.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/Torpedo/Hajo.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/Torpedo/Hajo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/Torpedo/Pelda.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/Torpedo/Pelda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/Torpedo/Tabla.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/Torpedo/Tabla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/controller/KisTablaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/controller/KisTablaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/dataTabla/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/dataTabla/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/dataTabla/jatekosLepes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/dataTabla/jatekosLepes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/dataTabla/readFromJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/dataTabla/readFromJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/src/main/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/main/MyApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,12 +36,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <module name="Torpedo_ copy" />
+      <module name="Torpedo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -176,6 +110,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="396" y="126" key="#Main/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589911666336" />
+    <state x="370" y="81" key="#Main_(1)" timestamp="1590243685629">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="370" y="81" key="#Main_(1)/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590243685629" />
     <state x="385" y="103" width="811" height="669" key="#Project_Structure" timestamp="1587559636761">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -188,39 +126,39 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="408" y="204" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1588677074711" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1590241812576">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1590243832535">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590065263967" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590241812576" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1590241812575">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590243832535" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1590243832534">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1587561720117" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590065263966" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590241812575" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1590241812575">
+    <state width="1398" height="229" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590243832534" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1590243832533">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1587561720116" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590065263965" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590241812575" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1590241812576">
+    <state width="1398" height="229" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590243832533" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1590243832535">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1248" height="192" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590065263967" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590241812576" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590243832535" />
     <state x="258" y="123" key="Maven.ArtifactSearchDialog" timestamp="1590171140638">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="258" y="123" key="Maven.ArtifactSearchDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590171140638" />
-    <state x="286" y="23" key="SettingsEditor" timestamp="1589990412132">
+    <state x="286" y="23" key="SettingsEditor" timestamp="1590243292895">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="286" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1587560594186" />
-    <state x="286" y="23" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1589990412132" />
+    <state x="286" y="23" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590243292895" />
     <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1588677186999">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
