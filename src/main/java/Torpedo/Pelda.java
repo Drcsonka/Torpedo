@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Random;
 
 import controller.GameController;
-import dataTabla.Main;
+import dataTabla.writeToJSON;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -139,7 +139,7 @@ public class Pelda  {
             xyJ = xJ+yJ;
             jatekoslepese = true;
             lepes++;
-            Main.ujtablaadat();
+            writeToJSON.ujtablaadat();
 
 
             ellensegKore = !cell.loves();
@@ -335,7 +335,7 @@ public class Pelda  {
             jatekoslepese = false;
             lepes++;
 
-            Main.ujtablaadat();
+            writeToJSON.ujtablaadat();
 
 
             Cella cella = tablaJ.getCella(x, y);
