@@ -395,6 +395,7 @@ public class Pelda  {
 
             xyE = xE + yE;
             jatekoslepese = false;
+            lepes++;
 
             Lepes.setText(xyE);
             try {

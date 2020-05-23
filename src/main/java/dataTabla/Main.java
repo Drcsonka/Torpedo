@@ -25,7 +25,7 @@ public class Main {
 
     //static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    
+    static JSONArray adatok = new JSONArray();
 
     public static void main(String[] args) throws Exception {
 
@@ -65,11 +65,23 @@ public class Main {
 
 
             //ujkiiras(tablaadatJ);
+            /*
             Tablazat user = new Tablazat("Tom Smith", "American");
             ujkiiras(user);
             System.out.println("Working");
                Gson gson = new GsonBuilder().create();
                 gson.toJson(user, new FileWriter("tablazat.json"));
+                */
+
+            JSONObject lepesek = new JSONObject();
+            lepesek.put("Jatekos","jatekos");
+            lepesek.put("lepes",jatekosLep);
+            JSONObject employeeObject = new JSONObject();
+            employeeObject.put("Action", lepesek);
+
+            adatok.add(employeeObject);
+
+            ujkiiras();
 
         }
         else{
@@ -83,22 +95,41 @@ public class Main {
             //gson.toJson(tablaadatE, new FileWriter("tablazat.json"));
 
             //gson.toString(1);
+
+            JSONObject lepesek = new JSONObject();
+            lepesek.put("Jatekos","Ellenseg");
+            lepesek.put("lepes",ellensegLep);
+            JSONObject employeeObject = new JSONObject();
+            employeeObject.put("Action", lepesek);
+
+            adatok.add(employeeObject);
+            ujkiiras();
         }
+
 
     }
 
-    public static void ujkiiras(Tablazat tablazat) throws IOException {
+    public static void ujkiiras() throws IOException {
 
         //FileWriter writer = new FileWriter("tablazat.json");
         //Gson gson = new GsonBuilder().create();
          //gson.toJson(tablazat, writer);
        // System.out.println("Not working");
 
-
+/*
         try (FileWriter writer = new FileWriter("tablazat.json")) {
             Gson gson = new GsonBuilder().create();
             gson.toJson(tablazat, writer);
 
+        }*/
+
+        try (FileWriter file = new FileWriter("tablazat.json")) {
+
+            file.write(adatok.toJSONString());
+            file.flush();
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
     public HashMap<String, String> myMethodName() throws FileNotFoundException
