@@ -1,52 +1,39 @@
 package Torpedo;
 
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.Optional;
 import java.util.Random;
 
 import controller.GameController;
-import controller.KisTablaController;
 import dataTabla.Main;
-import javafx.application.Application;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.print.*;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.SubScene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-import javafx.scene.transform.Scale;
-import javafx.stage.Stage;
 
 import Torpedo.Tabla.Cella;
 import main.MyApplication;
-import org.json.simple.JSONObject;
 
 public class Pelda  {
 
-    public  static boolean jatekVege = false;
+     public  static boolean jatekVege = false;
     //public static Parent scene1= new Scene(createContent());
      public static boolean jatekKezdet = false;
      private static Tabla tablaE, tablaJ;
-     static int Nyertel = 0;
+     public static int Nyertel = 0;
 
 
-     private static int hatralevoHajok = 5;
+     public static int hatralevoHajok = 5;
      static Button resetButton = new Button("Reset");
      static Button tablaButton = new Button( "Lepesek");
+     static Button exitButton = new Button("Exit");
      static Text menuT = new Text("Menu");
      private static boolean ellensegKore = false;
      static String[] ybetuk = {"A","B","C","D","E","F","G","H","I","J"};
@@ -54,25 +41,11 @@ public class Pelda  {
      public static String xyE;
      public static int lepes= 0;
 
-    private static Label Lepes= new Label("lepes");
-    private static Label LepesJ= new Label("lepes");
-
     public static boolean jatekoslepese = true;
 
 
-     private static Random random = new Random();
-     //private Stage stage31;
-     //public SubScene sub = new SubScene(createContent(), 800,850);
+     private static final Random random = new Random();
 
-/*
-    public static SubScene createSubScene(Parent root) {
-
-
-        SubScene subScene = new SubScene(root, 500, 400);
-
-        return subScene;
-    }
-*/
 
 /*
     @Override
@@ -107,11 +80,8 @@ public class Pelda  {
         resetButton.setPrefHeight(50);
         tablaButton.setPrefWidth(150);
         tablaButton.setPrefHeight(50);
-
-        Lepes.setPrefHeight(50);
-        Lepes.setPrefWidth(150);
-        LepesJ.setPrefHeight(50);
-        LepesJ.setPrefWidth(150);
+        exitButton.setPrefWidth(150);
+        exitButton.setPrefHeight(50);
 
         // Top margo
 
@@ -120,20 +90,20 @@ public class Pelda  {
         root.setTop(topNode);
         BorderPane.setMargin(topNode, insets);
 
-        resetButton.setOnAction(e -> {
-                    reset(MyApplication.stage31);
-        });
+        resetButton.setOnAction(e -> GameController.reset(MyApplication.stage31));
+
+        exitButton.setOnAction(e -> System.exit(0));
 
         tablaButton.setOnAction(e -> {
             try {
-                KisTablaController.tablazat( e );
+                GameController.tablazat( e );
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
         });
 
 
-        VBox menu = new VBox( 20,menuT, resetButton, tablaButton, Lepes, LepesJ);
+        VBox menu = new VBox( 20,menuT, resetButton, tablaButton, exitButton);
         menu.setAlignment(Pos.TOP_CENTER);
         root.setRight(menu);
 
@@ -165,18 +135,12 @@ public class Pelda  {
                 return;
 
             String xJ = String.valueOf(cell.x+1);
-            String y22 = String.valueOf(cell.y+1);
             String yJ = ybetuk[cell.y];
             xyJ = xJ+yJ;
             jatekoslepese = true;
             lepes++;
-            try {
-                Main.ujtablaadat();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            Main.ujtablaadat();
 
-            LepesJ.setText(xyJ);
 
             ellensegKore = !cell.loves();
 
@@ -185,7 +149,7 @@ public class Pelda  {
                 System.out.println("Nyertel");
                 jatekVege = true;
                 Nyertel = 2;
-                popUpAblak();
+                GameController.popUpAblak();
 
 
             }
@@ -332,35 +296,11 @@ public class Pelda  {
 
     }
 
-/*
-    public void print(WritableImage writableImage, Stage primaryStage) {
-        ImageView imageView =new ImageView(writableImage);
-        Printer printer = Printer.getDefaultPrinter();
-        PageLayout pageLayout = printer.createPageLayout(Paper.A4, PageOrientation.LANDSCAPE, Printer.MarginType.DEFAULT);
-        double scaleX = pageLayout.getPrintableWidth() / imageView.getBoundsInParent().getWidth();
-        double scaleY = pageLayout.getPrintableHeight() / imageView.getBoundsInParent().getHeight();
-        imageView.getTransforms().add(new Scale(scaleX, scaleY));
-
-        PrinterJob job = PrinterJob.createPrinterJob();
-        if (job != null) {
-            boolean successPrintDialog = job.showPrintDialog(primaryStage.getOwner());
-            if(successPrintDialog){
-                boolean success = job.printPage(pageLayout,imageView);
-                if (success) {
-                    job.endJob();
-                }
-            }
-        }
-    }
-
-    */
-
-    private static Label font(Label label){
+    private static void font(Label label){
 
         label.setTextFill(Color.web("#FFFFFF"));
         label.setFont(new Font("Arial", 17));
         label.setStyle("-fx-font-weight: bold;");
-        return label;
     }
 
 
@@ -388,21 +328,14 @@ public class Pelda  {
             int x = random.nextInt(10);
             int y = random.nextInt(10);
             String x1 = String.valueOf(x+1);
-            String y21 = String.valueOf(y+1);
 
             String yE = ybetuk[y];
-            String xE = x1;
 
-            xyE = xE + yE;
+            xyE = x1 + yE;
             jatekoslepese = false;
             lepes++;
 
-            Lepes.setText(xyE);
-            try {
-                Main.ujtablaadat();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            Main.ujtablaadat();
 
 
             Cella cella = tablaJ.getCella(x, y);
@@ -415,65 +348,9 @@ public class Pelda  {
                 System.out.println("Vesztettel");
                 Nyertel = 1;
                 jatekVege = true;
-                popUpAblak();
+                GameController.popUpAblak();
 
             }
         }
     }
-
-    public static void popUpAblak(){
-
-
-        if(Nyertel == 1)
-        {
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setTitle("Vesztettel");
-            alert.setHeaderText(null);
-            alert.setGraphic(null);
-            alert.setContentText("Vesztettel, szeretnel uj jatekot kezdeni?");
-
-            Optional<ButtonType> result = alert.showAndWait();
-            if (result.get() == ButtonType.OK)
-            {
-                reset(MyApplication.stage31);
-            } else
-            {
-
-            }
-        }
-        else if(Nyertel == 2)
-        {
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setTitle("Nyertel");
-            alert.setHeaderText(null);
-            alert.setGraphic(null);
-            alert.setContentText("Gratulalok Nyertel! Szeretnel uj jatekot kezdeni?");
-
-            Optional<ButtonType> result = alert.showAndWait();
-            if (result.get() == ButtonType.OK)
-            {
-                reset(MyApplication.stage31);
-            } else
-            {
-
-            }
-        }
-
-
-    }
-    //public Scene scene1 = new Scene(createContent());
-
-    private static void reset(Stage primaryStage){
-
-        primaryStage.close();
-        jatekKezdet = false;
-        hatralevoHajok = 5;
-        Scene scene2 = new Scene(createContent());
-        primaryStage.setScene(scene2);
-        primaryStage.show();
-        jatekVege = false;
-
-    }
-
-
 }

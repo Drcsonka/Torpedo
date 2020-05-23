@@ -6,7 +6,6 @@ import java.util.List;
 import javafx.event.EventHandler;
 import javafx.geometry.Point2D;
 import javafx.scene.Parent;
-import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -14,8 +13,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 public class Tabla extends Parent {
-    private VBox sorok = new VBox();
-    private boolean ellenseg = false;
+    private final VBox sorok = new VBox();
+    private final boolean ellenseg;
 
     public int hajok = 5;
 
@@ -23,7 +22,6 @@ public class Tabla extends Parent {
         this.ellenseg= ellenseg;
         for (int y = 0; y < 10; y++) {
             HBox sor = new HBox();
-            Label text1 = new Label ("TT");
             for (int x = 0; x < 10; x++) {
                 Cella c = new Cella(x, y, this);
                 c.setOnMouseClicked(handler);
@@ -43,7 +41,7 @@ public class Tabla extends Parent {
         public Hajo hajo = null;
         public boolean wasShot = false;
 
-        private Tabla tabla;
+        private final Tabla tabla;
 
         public Cella(int x, int y, Tabla tabla) {
             super(32, 32);
@@ -56,7 +54,7 @@ public class Tabla extends Parent {
         }
 
         public boolean loves() {
-            if( Pelda.jatekVege == true)
+            if(Pelda.jatekVege)
             {
                 return false;
             }
@@ -90,7 +88,7 @@ public class Tabla extends Parent {
                 new Point2D(x, y + 1)
         };
 
-        List<Cella> szomszedok = new ArrayList<Cella>();
+        List<Cella> szomszedok = new ArrayList<>();
 
         for (Point2D p : points) {
             if (letezoElem(p)) {
@@ -188,6 +186,5 @@ public class Tabla extends Parent {
 
         return false;
     }
-
 
 }

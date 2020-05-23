@@ -8,6 +8,13 @@
     <artifactId>Torpedo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <developers>
+        <developer>
+            <id>Csonka</id>
+            <name>Ádám Halász</name>
+            <email>halasz.adam99@gmail.com</email>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -82,6 +89,25 @@
             </configuration>
         </plugin>
         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+                <execution>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <consoleOutput>true</consoleOutput>
+                <enableRSS>false</enableRSS>
+                <configLocation>${basedir}/checkstyle.xml</configLocation>
+                <propertyExpansion>checkstyle.config.path=${basedir}</propertyExpansion>
+            </configuration>
+        </plugin>
+        <plugin>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-maven-plugin</artifactId>
             <version>0.0.2</version>
@@ -110,6 +136,15 @@
             <version>3.9.0</version>
         </plugin>
         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+        <plugin>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok-maven-plugin</artifactId>
             <version>1.18.6.0</version>
@@ -120,18 +155,6 @@
                     </goals>
                 </execution>
             </executions>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-checkstyle-plugin</artifactId>
-            <version>3.0.0</version>
-            <dependencies>
-                <dependency>
-                    <groupId>com.puppycrawl.tools</groupId>
-                    <artifactId>checkstyle</artifactId>
-                    <version>8.19</version>
-                </dependency>
-            </dependencies>
         </plugin>
         <plugin>
             <groupId>com.github.johnpoth</groupId>
@@ -188,6 +211,11 @@
                 </execution>
             </executions>
         </plugin>
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.5</version>
+        </plugin>
     </plugins>
     <resources>
         <resource>
@@ -204,14 +232,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.1.1</version>
     </plugin>
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.0.0</version>
-        <configuration>
-            <configLocation>checkstyle.xml</configLocation>
-        </configuration>
-    </plugin>
+
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
@@ -224,10 +245,16 @@
         <version>0.8.5</version>
     </plugin>
     <plugin>
-        <groupId>org.openclover</groupId>
-        <artifactId>clover-maven-plugin</artifactId>
-        <version>4.4.1</version>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.1.1</version>
     </plugin>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>3.0.0-M4</version>
+    </plugin>
+
 </plugins>
 </reporting>
 </project>

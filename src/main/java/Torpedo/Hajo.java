@@ -4,13 +4,14 @@ import javafx.scene.Parent;
 
 public class Hajo extends Parent {
     public int nagysag;
-    public boolean fuggoleges = true;
+    public boolean fuggoleges;
 
     private int elet;
 
     public Hajo(int nagysag, boolean fuggoleges) {
         this.nagysag = nagysag;
-        this.fuggoleges = fuggoleges;
+        if (fuggoleges) this.fuggoleges = true;
+        else this.fuggoleges = false;
         elet = nagysag;
     }
 

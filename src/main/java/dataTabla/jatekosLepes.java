@@ -3,8 +3,8 @@ package dataTabla;
 import javafx.beans.property.SimpleStringProperty;
 
 public class jatekosLepes {
-        private SimpleStringProperty jatekosNev;
-        private SimpleStringProperty lepesek;
+        private final SimpleStringProperty jatekosNev;
+        private final SimpleStringProperty lepesek;
 
         public jatekosLepes(String jatekosNev, String lepesek){
             this.jatekosNev = new SimpleStringProperty(jatekosNev);
