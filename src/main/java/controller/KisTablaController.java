@@ -1,8 +1,8 @@
 package controller;
 
-import Torpedo.Pelda;
-import dataTabla.jatekosLepes;
-import dataTabla.readFromJSON;
+import Torpedo.jatektabla.Pelda;
+import Torpedo.dataTabla.jatekosLepes;
+import Torpedo.dataTabla.readFromJSON;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

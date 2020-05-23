@@ -11,13 +11,18 @@
            <module name="JavadocType">
                <property name="severity" value="ignore"/>
            </module>
+
            <module name="MissingJavadocMethod"/>
            <module name="MissingJavadocPackage"/>
            <module name="JavadocType"/>
+
            <module name="JavadocMethod">
                <property name="severity" value="ignore"/>
            </module>
 
            <module name="JavadocStyle"/>
        </module>
+    <module name="SuppressionFilter">
+        <property name="file" value="mysuppression.xml" />
+    </module>
    </module>

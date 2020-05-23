@@ -1,6 +1,6 @@
 package main;
 
-import Torpedo.Pelda;
+import Torpedo.jatektabla.Pelda;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

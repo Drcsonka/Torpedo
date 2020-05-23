@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Random;
 
 import controller.GameController;
-import dataTabla.writeToJSON;
+import Torpedo.dataTabla.writeToJSON;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
