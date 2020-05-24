@@ -11,7 +11,6 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
@@ -24,7 +23,6 @@ import main.MyApplication;
 public class Pelda  {
 
      public  static boolean jatekVege = false;
-    //public static Parent scene1= new Scene(createContent());
      public static boolean jatekKezdet = false;
      private static Tabla tablaE, tablaJ;
      public static int Nyertel = 0;
@@ -118,7 +116,7 @@ public class Pelda  {
             ellensegKore = !cell.loves();
 
 
-            if (tablaE.hajok == 4) {
+            if (tablaE.hajok == 0) {
                 System.out.println("Nyertel");
                 jatekVege = true;
                 Nyertel = 2;
@@ -144,10 +142,6 @@ public class Pelda  {
         });
 
 
-
-
-
-        // Tablak kozepen + felirat
         Label labelSz1 = new Label("   1");
         font(labelSz1);
         Label labelSz2 = new Label("2");
@@ -239,8 +233,6 @@ public class Pelda  {
         HBox Szam11 = new HBox(22, labelSz1, labelSz2,labelSz3, labelSz4,labelSz5,labelSz6,labelSz7,labelSz8,labelSz9,labelSz210);
 
 
-
-
         root.setCenter(Szam11);
 
         VBox Betu1 = new VBox(13, labelB21, labelB22,labelB23, labelB24,labelB25,labelB26,labelB27,labelB28,labelB29,labelB210);
@@ -258,15 +250,9 @@ public class Pelda  {
 
         VBox tablak = new VBox(50, elsoTabla, masodikTabla);
         tablak.setAlignment(Pos.CENTER);
-
-
         root.setCenter(tablak);
 
-
-
-
         return root;
-
     }
 
     /**

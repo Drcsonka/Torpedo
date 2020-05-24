@@ -67,6 +67,7 @@ public class writeToJSON {
             file.write(adatok.toJSONString());
             file.flush();
 
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -78,14 +79,6 @@ public class writeToJSON {
     public static void torles(){
 
         adatok = new JSONArray();
-        /*
-        for( int i = adatok.size();i==0;i--){
-            adatok.remove(i);
-        }
-
-         */
     }
-
-
-    }
+}
 

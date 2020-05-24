@@ -20,6 +20,17 @@ class HajoTest {
     @Test
     void testtalalatV() {
         assertEquals(3,testhajo.talalatV());
-        readFromJSON.logger.info("Teszt sikeresen lefutott");
+        readFromJSON.logger.info("Sikeresen eltaláltuk a hajot.");
     }
+
+    @Test
+    void testEl() {
+        testhajo.talalatV();
+        testhajo.talalatV();
+        testhajo.talalatV();
+        testhajo.talalatV();
+        assertEquals(false,testhajo.El());
+        readFromJSON.logger.info("A hajo megsemmisult.");
+    }
+
 }

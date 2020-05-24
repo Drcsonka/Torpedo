@@ -35,27 +35,6 @@ public class KisTablaController {
 
     public static void feltoltes(){
 
-        /*
-        obvservableList = FXCollections.observableArrayList(
-                new jatekosLepes(readFromJSON.jatekos.get(0), readFromJSON.lepesek.get(0))
-        );
-
-        for(int i = 1; i <=Pelda.lepes-1;i++){
-            //obvservableList.add(new jatekosLepes(readFromJSON.jatekos.get(i), readFromJSON.lepesek.get(i)));
-            //obvservableList.add( new jatekosLepes("jatekos", "lepes"));
-            //obvservableList.
-            /*
-            obvservableList = FXCollections.observableArrayList(
-                    new jatekosLepes(readFromJSON.jatekos.get(i), readFromJSON.lepesek.get(i))
-            );
-
-             // csillag/
-
-            obvservableList.add(new jatekosLepes(readFromJSON.jatekos.get(i), readFromJSON.lepesek.get(i)));
-        }
-
-*/
-
         obvservableList = FXCollections.observableArrayList(
                 new jatekosLepes(readFromJSON.jatekos.get(Pelda.lepes-1), readFromJSON.lepesek.get(Pelda.lepes-1))
         );

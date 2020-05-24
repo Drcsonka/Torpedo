@@ -45,6 +45,7 @@ public class readFromJSON {
             Object obj = jsonParser.parse(reader);
 
             beolvasLista = (JSONArray) obj;
+            readFromJSON.logger.info("Sikeresen olvastunk a fájlból!");
 
             beolvasLista.forEach( emp -> listParting( (JSONObject) emp ) );
 
@@ -79,7 +80,6 @@ public class readFromJSON {
      */
     public static void kiakarokirni(){
         logger.debug("Az eddigi lépések száma:"+Pelda.lepes);
-        //logger.debug("Az eddigi lépések száma:"+ writeToJSON.adatok.size());
 
     }
 

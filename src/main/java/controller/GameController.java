@@ -22,13 +22,6 @@ import java.util.*;
 public class GameController {
 
 
-/*
-    public static ArrayList<String> reverse(ArrayList<String> arr) {
-        ArrayUtils.reverse(arr);
-        return arr;
-    }
-
- */
     public static Scene scene2;
     public static int meghivva = 0;
 

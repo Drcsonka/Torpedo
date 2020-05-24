@@ -3,6 +3,7 @@ package Torpedo.jatektabla;
 import java.util.ArrayList;
 import java.util.List;
 
+import Torpedo.dataTabla.readFromJSON;
 import javafx.event.EventHandler;
 import javafx.geometry.Point2D;
 import javafx.scene.Parent;
@@ -19,9 +20,11 @@ public class Tabla extends Parent {
     public int hajok = 5;
 
     /**
-     * valami.
-     * @param ellenseg valami.
-     * @param handler valami.
+     * Ez lesz a Táblalétrehozó metódusunk. A tábláink Hbox-okból fognak állni,
+     * amiket Cellákat töltünk fel vagyis kis kockákkal, amik majd interaktívak lesznek klikkelésre.
+     * A hboxainkat vagyis a sorainkat majd Egy Vbox-ba vagyis egy oszlopba rakjuk bele, így összekötve a sorokat.
+     * @param ellenseg Ez fogja számunkra azt jelenteni hogy a tábla az ellenség táblája-e vagy sem.
+     * @param handler Ez fogja a klikkelésünket, érzékelni és értelmezni.
      */
     public Tabla(boolean ellenseg, EventHandler<? super MouseEvent> handler) {
         this.ellenseg= ellenseg;
@@ -49,10 +52,12 @@ public class Tabla extends Parent {
         private final Tabla tabla;
 
         /**
-         * valami.
-         * @param x valami.
-         * @param y valami.
-         * @param tabla valami.
+         * Ez lesz maga a cellánk, megadunk neki egy x,y értéket hogy majd
+         * tudjuk hogy hol helyezkedik el a cella.Majd megadjuk neki hogy melyik táblához tartozik,
+         * és végül beállítjuk a háttérszinét a cellának, világoskékre, a körvonalát feketére.
+         * @param x Az x koordinátája a táblánknak.
+         * @param y Az y koordinátája a táblánkak.
+         * @param tabla Melyik táblához tartozik.
          */
         public Cella(int x, int y, Tabla tabla) {
             super(32, 32);
@@ -65,8 +70,13 @@ public class Tabla extends Parent {
         }
 
         /**
-         * Valami.
-         * @return valami.
+         * Ezt fogjuk meghívni amikor lövünk, az első igazságvizsgálatban
+         * megnézzük, hogy a játszmánk véget ért-e már, ha igen akkor hamisat adunk vissza
+         * ezzel jelezve hogy már nemtudunk lőni. Ha sikerül lőnünk, akkor feketére állítjuk a cellát,
+         * és megmondjuk ennek a cellának, hogy már elvolt találva. Ha viszont abban a cellában
+         * hajó is található volt akkor eltaláltnak számítjuk azt a hajót, a cella szinét pirosra állítjuk
+         * és ha a hajónak ez volt az utolsó élete, akkor meghaltnak tekintjük.
+         * @return itt az értékünk true, ha sikeresen lőttünk, és false ha nem.
          */
         public boolean loves() {
             if(Pelda.jatekVege)
@@ -81,6 +91,7 @@ public class Tabla extends Parent {
                 setFill(Color.RED);
                 if (!hajo.El()) {
                     tabla.hajok--;
+                    readFromJSON.logger.info("Egy hajo megsemmisult.");
                 }
                 return true;
             }
@@ -90,10 +101,10 @@ public class Tabla extends Parent {
     }
 
     /**
-     * Valami.
-     * @param x valami.
-     * @param y valami.
-     * @return valami.
+     * Ezt hívjuk majd meg hogy megkapjuk a cella helyét.
+     * @param x megadjuk neki a x koordináta értékét.
+     * @param y az y koordiánata értékét.
+     * @return majd visszaadjuk a sorból a cella értékeit.
      */
     public Cella getCella(int x, int y) {
         return (Cella)((HBox)sorok.getChildren().get(y)).getChildren().get(x);
@@ -177,11 +188,16 @@ public class Tabla extends Parent {
 
 
     /**
-     * Valami.
-     * @param hajo valami.
-     * @param x valami.
-     * @param y valami.
-     * @return valami.
+     * Itt fogjuk lerakni a hajót majd a táblára, először is megnézzük, hogy lerakható-e
+     * a hajónk arra a pozícióra amit kapott. Majd megadjuk neki hogy milyen nagyságú a hajónk.
+     * Majd egy if függvény álltal megnézzük, hogy függőlegesen vagy merőlegesen rakjuk le a hajónkat
+     * Miután megtudtuk hogy függőlegesen vagy merőlegesen akarjuk lerakni a hajónkat, egy for ciklust
+     * hivunk meg a hajó nagyságára és lerakjuk a hajónkat. A lerakott hajót barna színüre fogjuk színzeni.
+     *
+     * @param hajo megadjuk a hajót amit éppen le akarunk rakni.
+     * @param x a cella x koordinátája ahova a hajót szeretnénk elhelyezni.
+     * @param y a cellánk y koordinátája.
+     * @return true lesz a visszatérési érték ha leraktuk a hajót, és false ha nemtudjuk.
      */
     public boolean hajoLerakas(Hajo hajo, int x, int y) {
         if (Lerakhato(hajo, x, y)) {
@@ -207,11 +223,8 @@ public class Tabla extends Parent {
                     }
                 }
             }
-
             return true;
         }
-
         return false;
     }
-
 }
