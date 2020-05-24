@@ -74,7 +74,6 @@ public class KisTablaController {
             MyApplication.stage31.setScene(GameController.scene2);
         }
 
-
         MyApplication.stage31.show();
     }
     public static void resetList(){

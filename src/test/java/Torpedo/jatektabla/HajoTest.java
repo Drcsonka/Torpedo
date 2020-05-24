@@ -1,5 +1,6 @@
 package Torpedo.jatektabla;
 
+import Torpedo.dataTabla.readFromJSON;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,13 +13,13 @@ class HajoTest {
     @BeforeEach
     void setUp() {
         testhajo  = new Hajo(4, Math.random() < 0.5);
-        System.out.println("I work");
+        readFromJSON.logger.info("BeforeEach sikeresen lefutott");
     }
 
 
     @Test
     void testtalalatV() {
         assertEquals(3,testhajo.talalatV());
-        System.out.println("I work too");
+        readFromJSON.logger.info("Teszt sikeresen lefutott");
     }
 }

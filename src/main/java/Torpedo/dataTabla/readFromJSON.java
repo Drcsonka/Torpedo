@@ -21,9 +21,9 @@ public class readFromJSON {
      * Létrehozzunk a beolvasLista beolvasListat, amibe majd beolvassuk az adatokat.
      */
     public static JSONArray beolvasLista;
-    public static ArrayList<String> lepesek = new ArrayList<>();
-    public static ArrayList<String> jatekos = new ArrayList<>();
-    private static final Logger logger = LogManager.getLogger(readFromJSON.class);
+    public static ArrayList<String> lepesek;
+    public static ArrayList<String> jatekos;
+    public static final Logger logger = LogManager.getLogger(readFromJSON.class);
 
     /**
      * Ez a beolvas metódusunk, itt fogjuk létrehozni a <Code>reader</Code> -t aminek
@@ -35,6 +35,8 @@ public class readFromJSON {
      */
     public static void beolvas()
     {
+        lepesek = new ArrayList<>();
+        jatekos = new ArrayList<>();
         JSONParser jsonParser = new JSONParser();
 
         try (FileReader reader = new FileReader("tablazat.json"))

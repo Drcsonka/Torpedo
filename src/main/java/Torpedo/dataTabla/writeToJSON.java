@@ -32,10 +32,10 @@ public class writeToJSON {
             JSONObject lepesek = new JSONObject();
             lepesek.put("Jatekos","Jatekos");
             lepesek.put("lepes",jatekosLep);
-            JSONObject employeeObject = new JSONObject();
-            employeeObject.put("Action", lepesek);
+            JSONObject tablaObject = new JSONObject();
+            tablaObject.put("Action", lepesek);
 
-            adatok.add(employeeObject);
+            adatok.add(tablaObject);
 
             ujkiiras();
 
@@ -44,10 +44,10 @@ public class writeToJSON {
             JSONObject lepesek = new JSONObject();
             lepesek.put("Jatekos","Ellenseg");
             lepesek.put("lepes",ellensegLep);
-            JSONObject employeeObject = new JSONObject();
-            employeeObject.put("Action", lepesek);
+            JSONObject tablaObject = new JSONObject();
+            tablaObject.put("Action", lepesek);
 
-            adatok.add(employeeObject);
+            adatok.add(tablaObject);
             ujkiiras();
         }
 
