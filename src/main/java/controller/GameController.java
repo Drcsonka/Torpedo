@@ -1,6 +1,8 @@
 package controller;
+import Torpedo.dataTabla.writeToJSON;
 import Torpedo.jatektabla.Pelda;
 import Torpedo.dataTabla.readFromJSON;
+import Torpedo.jatektabla.Tabla;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -8,6 +10,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import main.MyApplication;
 
@@ -25,7 +29,8 @@ public class GameController {
     }
 
  */
-
+    public static Scene scene2;
+    public static int meghivva = 0;
 
 
     public static void popUpAblak(){
@@ -62,16 +67,21 @@ public class GameController {
 
 
     }
+
     public static void reset(Stage primaryStage){
 
         primaryStage.close();
         Pelda.jatekKezdet = false;
         Pelda.hatralevoHajok = 5;
-        Scene scene2 = new Scene(Pelda.createContent());
+        scene2 = new Scene(Pelda.createContent());
+        Pelda.jatekVege = false;
+        meghivva++;
+        writeToJSON.torles();
+        Pelda.lepes =0;
+        hatter();
+        readFromJSON.torles();
         primaryStage.setScene(scene2);
         primaryStage.show();
-        Pelda.jatekVege = false;
-
     }
 
     public static void tablazat(ActionEvent actionEvent) throws IOException {
@@ -79,7 +89,6 @@ public class GameController {
 
         readFromJSON.beolvas();
         readFromJSON.kiakarokirni();
-        // GameController.reverse(readFromJSON.jatekos);
         KisTablaController.feltoltes();
         Parent root = FXMLLoader.load(KisTablaController.class.getResource("/fxml/tabla.fxml"));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -88,7 +97,21 @@ public class GameController {
 
 
     }
+    public static void hatter(){
 
+
+    Image image = new Image("BG2.jpeg");
+
+    BackgroundImage backgroundimage = new BackgroundImage(image,
+            BackgroundRepeat.NO_REPEAT,
+            BackgroundRepeat.NO_REPEAT,
+            BackgroundPosition.CENTER,
+            new BackgroundSize(800, 1000, false, false, false, false));
+
+    Background background = new Background(backgroundimage);
+
+        Pelda.root.setBackground(background);
+}
 
 
 }

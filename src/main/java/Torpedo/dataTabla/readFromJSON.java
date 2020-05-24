@@ -58,35 +58,36 @@ public class readFromJSON {
      * a <Code>jatekos</Code>-ba fog kerülni a Játékos adatok, vagyis az, hogy Ellenség vagy Játékos.
      * A <Code>lepesek</Code>-be viszont az játékos lépse.
      * Ez azért van, hogy későbbiekben ezekre az adatokra könnyebben lehessen hivatkozni.
-     * @param jatekosLepes valami.
+     * @param jatekosLepes ez az arrayunk objectjet kapja meg, és majd ezt bontja szét.
      */
     public static void listParting(JSONObject jatekosLepes)
     {
-        //Get employee object within list
         JSONObject listaObject = (JSONObject) jatekosLepes.get("Action");
 
-        //Get employee first name
         String jatekosnev = (String) listaObject.get("Jatekos");
         jatekos.add(jatekosnev);
 
-
-        //Get employee last name
         String jatekoslepes = (String) listaObject.get("lepes");
         lepesek.add(jatekoslepes);
 
     }
 
     /**
-     * valami.
+     * Ez egy Logger metódus lesz amit a táblázat megjelenítésénél iratunk ki.
      */
     public static void kiakarokirni(){
-        //System.out.println(beolvasLista);
-        int sizeer = beolvasLista.size()/2;
-        logger.debug(beolvasLista);
-        logger.debug(sizeer);
+        logger.debug("Az eddigi lépések száma:"+Pelda.lepes);
+        //logger.debug("Az eddigi lépések száma:"+ writeToJSON.adatok.size());
 
-        //System.out.println(Pelda.lepes);
+    }
 
+    /**
+     * Törlés metódus ami arra szolgál, hogy amikor resetelem a játékot
+     * akkor a tábla adatai is újuljanak.
+     */
+    public static void torles(){
+        lepesek = new ArrayList<>();
+        jatekos = new ArrayList<>();
     }
 
 

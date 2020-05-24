@@ -16,13 +16,14 @@ import javafx.scene.control.TableView;
 public class KisTablaController {
 
     @FXML
-    public TableView<jatekosLepes> tableview;
+    public  TableView<jatekosLepes> tableview;
 
 
     public TableColumn<jatekosLepes, String> playerN;
 
     @FXML
     public TableColumn<jatekosLepes, String> playerM;
+
 
     @FXML
     public void initialize(){
@@ -31,7 +32,6 @@ public class KisTablaController {
         tableview.setItems(obvservableList);
     }
     public static ObservableList<jatekosLepes> obvservableList ;
-
 
     public static void feltoltes(){
 
@@ -64,11 +64,23 @@ public class KisTablaController {
             obvservableList.add(new jatekosLepes(readFromJSON.jatekos.get(i), readFromJSON.lepesek.get(i)));
         }
     }
+
     public void goback() {
 
-        MyApplication.stage31.setScene(MyApplication.scene1);
+        if(GameController.meghivva == 0){
+            MyApplication.stage31.setScene(MyApplication.scene1);
+        }
+        else{
+            MyApplication.stage31.setScene(GameController.scene2);
+        }
+
+
         MyApplication.stage31.show();
     }
+    public static void resetList(){
+        obvservableList.clear();
+    }
+
     public void leave()  {
         System.exit(0);
 

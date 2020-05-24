@@ -42,40 +42,29 @@ public class Pelda  {
      public static int lepes= 0;
 
     public static boolean jatekoslepese = true;
-
+    public static BorderPane root = new BorderPane();
 
      private static final Random random = new Random();
 
 
-/*
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        scene scene1 = new Scene(createContent());
-
-        scene1.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
-
-        this.stage31 = primaryStage;
-
-
-        resetButton.setOnAction(e -> {
-            reset(primaryStage);
-        });
-
-
-    }
-*/
-
-
-//new Foo().nonStaticMethod();
-//public Scene scene1 = new Scene(createContent());
-
     /**
-     * valami.
-     * @return valami.
+     * Itt fogunk létrehozni mindent amit majd a scene-en látunk játék közben.
+     * Először is létrehozunk egy <Code>BorderPane</Code>-t ami az alapja lesz
+     * az egésznek, mivel erre fogjuk majd a többi elemünket rárakni.
+     * Beállítjuk a <Code>resetButton</Code> nagyságát, megadjuk neki, hogy
+     * clickelésre mit csináljon, majd a <Code>menu</Code>-be rakva ami egy Vbox
+     * beállítjuk a <Code>borderPane</Code> jobb oldalára.
+     * Ugyan ezt megtesszuk a <Code>tablaButton</Code>-al és az <Code>exitButton</Code>-nal.
+     * Ezután egy létrehozzuk a két táblánkat és megadjuk hogy mit történjen ha beleklikkelunk.
+     * utanna lathatjuk, hogy sok label lett létrehozva, ezek fogják a
+     * táblák körüli segítséget adni, hogy melyik cellának mi a pontja.
+     * Majd a labeleket a táblákhoz kötve felrakjuk a <Code>borderPane</Code>-ünkre
+     *
+     * @return Visszaadjuk a Borderpane-ünket amit készítettünk.
      */
     public static Parent createContent() {
-        BorderPane root = new BorderPane();
 
+         root = new BorderPane();
 
         root.setPadding(new Insets(0, 60, 0, 150));
         root.setPrefSize(800, 850);
@@ -86,7 +75,6 @@ public class Pelda  {
         exitButton.setPrefWidth(150);
         exitButton.setPrefHeight(50);
 
-        // Top margo
 
         Insets insets = new Insets(10);
         Node topNode = new Label("");
@@ -109,24 +97,6 @@ public class Pelda  {
         VBox menu = new VBox( 20,menuT, resetButton, tablaButton, exitButton);
         menu.setAlignment(Pos.TOP_CENTER);
         root.setRight(menu);
-
-
-
-        //Hatter
-        Image image = new Image("BG2.jpeg");
-
-        BackgroundImage backgroundimage = new BackgroundImage(image,
-                BackgroundRepeat.NO_REPEAT,
-                BackgroundRepeat.NO_REPEAT,
-                BackgroundPosition.CENTER,
-                new BackgroundSize(800, 1000, false, false, false, false));
-
-        Background background = new Background(backgroundimage);
-
-        root.setBackground(background);
-
-
-
 
 
         tablaE = new Tabla(true, event -> {
@@ -299,6 +269,10 @@ public class Pelda  {
 
     }
 
+    /**
+     * Itt állítom be a labeleken megjelenő számok és betűk kinézetét.
+     * @param label Egy labelt kell kapnia a metódusunknak.
+     */
     private static void font(Label label){
 
         label.setTextFill(Color.web("#FFFFFF"));
@@ -307,7 +281,10 @@ public class Pelda  {
     }
 
 
-
+    /**
+     * Itt fognak létrejönni az ellenséges hajók, majd a végén a <Code>jatekKezdet</Code>-et
+     * igazra állítjuk ezzel jelezve, hogy vége van a hajó lerakó fázisnak, és kezdődik a lövöldözés.
+     */
     private static void startGame() {
         int nagysag = 5;
 
@@ -324,7 +301,8 @@ public class Pelda  {
 
 
     /**
-     * valami.
+     * Minden lövésünk után megfog hívódni ez a metódus, itt fogjuk randomgenerátorral
+     * legenerálni, hogy az ellenség hova löjjön a táblánkon.
      */
     public static void EllensegLepese() {
 

@@ -1,4 +1,4 @@
 /**
- * Defines the state-space representation of the rolling cubes puzzle.
+ * A tábla és a hajókkal való műveletek / deklarálások.
  */
 package Torpedo.jatektabla;

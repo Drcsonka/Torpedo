@@ -12,7 +12,7 @@ import java.io.*;
  * és ebbe fognak bekerülni majd a.
  */
 public class writeToJSON {
-    static JSONArray adatok = new JSONArray();
+    public static JSONArray adatok = new JSONArray();
 
     /**
      * Az ujtablaadat() metódusunk az egyik játékos által leadott lövés koordinátáit,
@@ -70,6 +70,20 @@ public class writeToJSON {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Törlés metódus, hogy a játék újrakezdése után ne lássuk az előző játékunkba tett lépéseket.
+     */
+    public static void torles(){
+
+        adatok = new JSONArray();
+        /*
+        for( int i = adatok.size();i==0;i--){
+            adatok.remove(i);
+        }
+
+         */
     }
 
 

@@ -1,4 +1,4 @@
 /**
- * Defines the state-space representation of the rolling cubes puzzle.
+ * Ebben a packageben a fájlbaírás és olvasás fájlok vannak.
  */
 package Torpedo.dataTabla;

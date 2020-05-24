@@ -1,6 +1,7 @@
 package main;
 
 import Torpedo.jatektabla.Pelda;
+import controller.GameController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -18,6 +19,7 @@ public class MyApplication extends Application {
         stage31 = primaryStage;
         primaryStage.setScene(scene1);
         primaryStage.show();
+        GameController.hatter();
 
     }
 
