@@ -183,4 +183,6 @@ buildNumber.properties
 /dist/
 /nbdist/
 /.nb-gradle/
-
+.idea/workspace.xml
+target/clover/*
+target/clover/**

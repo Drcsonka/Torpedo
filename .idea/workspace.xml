@@ -22,14 +22,7 @@
     <list default="true" id="146f7522-ff00-47a5-82b3-b30c11b35cc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employees.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/readFromJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/readFromJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/writeToJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/writeToJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/KisTablaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/KisTablaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Torpedo/jatektabla/HajoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Torpedo/jatektabla/HajoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tablazat.json" beforeDir="false" afterPath="$PROJECT_DIR$/tablazat.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/Torpedo-1.0-SNAPSHOT-clover.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/controller/GameController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/KisTablaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/controller/KisTablaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/clover/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/main/Main.class" afterDir="false" />
@@ -37,7 +30,6 @@
       <change beforePath="$PROJECT_DIR$/target/clover/clover.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/clover.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/clover/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/clover/original-Torpedo-1.0-SNAPSHOT-clover.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/clover/src/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/clover/src/controller/KisTablaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/controller/KisTablaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/clover/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/main/Main.java" afterDir="false" />
@@ -230,31 +222,31 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="490" y="337" width="460" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590246237200" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1590322561715">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1590324157837">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590322561715" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590324157837" />
     <state width="1248" height="192" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590065263967" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590250960823" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1590322561713">
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1590324157834">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.center/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590322561713" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590324157834" />
     <state width="1248" height="192" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1587561720117" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590065263966" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590250960820" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1590322561713">
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1590324157833">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.left/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590322561713" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590324157833" />
     <state width="1248" height="192" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1587561720116" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590065263965" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590250960818" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1590322561714">
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1590324157836">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.right/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590322561714" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590324157836" />
     <state width="1248" height="192" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590065263967" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590250960821" />
@@ -262,6 +254,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="258" y="123" key="Maven.ArtifactSearchDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590171140638" />
+    <state x="139" y="51" width="832" height="383" key="MultipleFileMergeDialog" timestamp="1590323829110">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="139" y="51" width="832" height="383" key="MultipleFileMergeDialog/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590323829110" />
     <state x="286" y="23" key="SettingsEditor" timestamp="1590258924114">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
