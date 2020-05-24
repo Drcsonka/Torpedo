@@ -28,6 +28,16 @@ public class Hajo extends Parent {
      */
     public void talalat() {
         elet--;
+
+    }
+
+    /**
+     * Egységteszt teszteléséhez létrehozott metódus.
+     * @return visszaadja az ujonnan megkapott életet.
+     */
+    public int talalatV(){
+        elet--;
+        return elet;
     }
 
     /**
