@@ -2,7 +2,6 @@ package controller;
 import Torpedo.dataTabla.writeToJSON;
 import Torpedo.jatektabla.Pelda;
 import Torpedo.dataTabla.readFromJSON;
-import Torpedo.jatektabla.Tabla;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;

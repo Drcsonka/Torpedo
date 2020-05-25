@@ -21,15 +21,21 @@
   <component name="ChangeListManager">
     <list default="true" id="146f7522-ff00-47a5-82b3-b30c11b35cc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/Tablazat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/Tablazat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/readFromJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/readFromJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/writeToJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/dataTabla/writeToJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/jatektabla/Hajo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/jatektabla/Hajo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/jatektabla/Pelda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/jatektabla/Pelda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Torpedo/jatektabla/Tabla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Torpedo/jatektabla/Tabla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/KisTablaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/KisTablaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Torpedo/jatektabla/HajoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Torpedo/jatektabla/HajoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tablazat.json" beforeDir="false" afterPath="$PROJECT_DIR$/tablazat.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/controller/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/controller/KisTablaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/controller/KisTablaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/main/MyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/classes/main/MyApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/clover.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/controller/KisTablaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/controller/KisTablaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/main/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/src/main/MyApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,31 +224,35 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="490" y="337" width="460" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590246237200" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1590334238664">
+    <state x="256" y="296" width="927" height="331" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1590408879499">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590334238664" />
+    <state x="256" y="296" width="927" height="331" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590408879499" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1590412192178">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590412192178" />
     <state width="1248" height="192" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590065263967" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590250960823" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1590334238659">
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1590412192176">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.center/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590334238659" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590412192176" />
     <state width="1248" height="192" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1587561720117" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590065263966" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590250960820" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1590334238658">
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1590412192175">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.left/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590334238658" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590412192175" />
     <state width="1248" height="192" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1587561720116" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590065263965" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590250960818" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1590334238663">
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1590412192177">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.right/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590334238663" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590412192177" />
     <state width="1248" height="192" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1587561720118" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590065263967" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590250960821" />
@@ -260,6 +270,10 @@
     <state x="286" y="23" key="SettingsEditor/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590258924114" />
     <state x="286" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1587560594186" />
     <state x="286" y="23" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590243961367" />
+    <state x="403" y="275" width="634" height="372" key="XPathView.FindDialog.DIMENSION_SERVICE_KEY.SIMPLE" timestamp="1590408892780">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="403" y="275" width="634" height="372" key="XPathView.FindDialog.DIMENSION_SERVICE_KEY.SIMPLE/-298.-1057.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590408892780" />
     <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1588677186999">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -287,5 +301,9 @@
     <state x="633" y="90" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1587558235562" />
     <state x="633" y="97" width="670" height="744" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1588001642932" />
     <state x="633" y="97" width="670" height="744" key="search.everywhere.popup/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1590177806682" />
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
   </component>
 </project>

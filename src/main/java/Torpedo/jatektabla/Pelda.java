@@ -117,7 +117,6 @@ public class Pelda  {
 
 
             if (tablaE.hajok == 0) {
-                System.out.println("Nyertel");
                 jatekVege = true;
                 Nyertel = 2;
                 GameController.popUpAblak();
@@ -314,7 +313,6 @@ public class Pelda  {
             ellensegKore = cella.loves();
 
             if (tablaJ.hajok == 0) {
-                System.out.println("Vesztettel");
                 Nyertel = 1;
                 jatekVege = true;
                 GameController.popUpAblak();

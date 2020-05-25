@@ -1,5 +1,6 @@
 package Torpedo.jatektabla;
 
+import Torpedo.dataTabla.readFromJSON;
 import javafx.scene.Parent;
 
 public class Hajo extends Parent {
@@ -29,6 +30,8 @@ public class Hajo extends Parent {
     public void talalat() {
         elet--;
 
+        readFromJSON.logger.info("Talalat!");
+
     }
 
     /**
@@ -46,5 +49,6 @@ public class Hajo extends Parent {
      */
     public boolean El() {
         return elet > 0;
+
     }
 }
